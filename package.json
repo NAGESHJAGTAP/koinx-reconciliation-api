@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
+    "postinstall": "npm run build",
     "dev": "nodemon src/index.ts",
     "test": "jest"
   },
@@ -20,7 +21,8 @@
     "fast-csv": "^5.0.7",
     "mongoose": "^9.6.2",
     "multer": "^2.1.1",
-    "uuid": "^14.0.0"
+    "uuid": "^14.0.0",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -32,7 +34,6 @@
     "jest": "^30.4.2",
     "nodemon": "^3.1.14",
     "ts-jest": "^29.4.11",
-    "ts-node": "^10.9.2",
-    "typescript": "^6.0.3"
+    "ts-node": "^10.9.2"
   }
 }
